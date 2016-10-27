@@ -1,10 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Posisi_model extends CI_Model {
+class Posisi_model extends MY_Model {
 
 	public $id_posisi;
 	public $nama;
+
+    protected $__table = 'posisi';
 
 	public function __construct()
 	{

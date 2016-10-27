@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pegawai_model extends CI_Model {
+class Pegawai_model extends MY_Model {
 
 	public $id_pegawai;
 	public $nama;
@@ -10,6 +10,8 @@ class Pegawai_model extends CI_Model {
 	public $kelamin;
 	public $id_posisi;
 	public $status;
+
+    protected $__table = 'pegawai';
 
 	public function __construct()
 	{

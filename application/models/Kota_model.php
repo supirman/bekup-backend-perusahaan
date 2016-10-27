@@ -1,10 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Kota_model extends CI_Model {
+class Kota_model extends MY_Model {
 
 	public $id;
 	public $nama;
+
+    protected $__table = 'kota';
 
 	public function __construct()
 	{
